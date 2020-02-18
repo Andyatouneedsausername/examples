@@ -1,6 +1,7 @@
 # CS3560 - Example Project
 
 Example project that uses Doxygen, Makefile, Catch2, Travis CI.
+Also used for students to practice pull requests
 
 This is a simple project that contain some of the tools used in the class. For example,
 
