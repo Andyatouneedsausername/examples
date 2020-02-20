@@ -1,3 +1,8 @@
+/**
+ * @file test_fib.cc
+ * @brief tests fib functions
+ * @author Krerkkiat Chusap
+ */
 // Let Catch2 know that we are using its main function.
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
@@ -12,7 +17,7 @@ TEST_CASE( "Iterative version should work" ) {
   // Get result.
   int result = fib_iterative(5);
   float result_f = static_cast<float>(result);
-  
+
   // Test.
   REQUIRE(result == 5);
   REQUIRE_THAT( result_f, WithinAbs(5.0, 0.05) ); // Floating point example.
@@ -29,7 +34,7 @@ TEST_CASE( "Recursive version should work" ) {
   // Get result.
   int result = fib_recursive(5);
   float result_f = static_cast<float>(result);
-  
+
   // Test.
   REQUIRE(result == 5);
   REQUIRE_THAT( result_f, WithinAbs(5.0, 0.05) ); // Floating point example.
